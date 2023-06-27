@@ -83,13 +83,19 @@ export const TodoList = () => {
                         Delete
                     </button>
                     
-                    {todoEditing === todo.id ? (<button onClick={() => editTodo(todo.id)}>Submit</button>) : (<button onClick={() => setTodoEditing(todo.id)}>Edit</button>)}
+                    {todoEditing === todo.id ? (<button onClick={() => editTodo(todo.id)}>Submit</button>) :
+                        (
+                            <button
+                                onClick={() => setTodoEditing(todo.id)}>
+                                Edit
+                            </button>
+                        )}
+                    
                     <input
                         type="checkbox"
                         onChange={() => toggleCompleted(todo.id)}
                         checked={todo.isCompleted}
                     />
-                    
                 </div>
             ))}
         </div>  

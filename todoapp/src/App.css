@@ -24,6 +24,8 @@ h1 {
   margin: 0 auto;
   width: 40%;
   height: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   background-color: lightpink;
 }
 
@@ -57,7 +59,7 @@ h1 {
   color: white;
 }
 
-.todo-list .todo-form button:hover {
+.todo-list .todo-form button:hover, .todo-list .todo-item button:hover {
   background-color: white;
   color: black;
 }
@@ -103,3 +105,4 @@ h1 {
   background-color: purple;
   color: white;
 }
+
